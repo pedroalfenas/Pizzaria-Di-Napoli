@@ -80,17 +80,17 @@ a{
 #historia:hover a{
     color: transparent;
 }
-#suporte:hover{
-    background-image: url(../imagens/suporte.png);
+#unidades:hover{
+    background-image: url(../imagens/unidades.jpg);
     background-repeat: no-repeat;
-    background-size: auto 225px;
+    background-size: auto 230px;
     background-position: center;
 }
-#suporte:hover a{
+#unidades:hover a{
     color: transparent;
 }
 
-/*container opcôes do cardápio (pizza trad., da casa e bebidas*/
+/*container opcôes do cardápio (pizza tradicionais, da casa e bebidas*/
 .pai{
     display: flex;
     flex-direction: column;
@@ -136,6 +136,19 @@ p{
 }
 
 /*Footer*/
+
+.whats {
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+}
+
+.whats img {
+    height: 100%;
+    width: 100%;
+}
 .final{
     border-top: solid 5px red;
     height: 200px;
