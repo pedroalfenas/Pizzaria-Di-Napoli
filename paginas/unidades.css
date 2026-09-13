@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+}
+
+.menu {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.botao-menu {
+    background-color: brown;
+    color: white;
+    height: 60px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(179, 99, 99) 5px 5px 7px;
+    border-bottom: solid black 2px;
+    transition: all 0.3s ease;
+}
+
+.botao-menu a {
+    /*Links do menu*/
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.botao-menu:not(#menu):hover {
+    border: solid black 2px;
+    border-radius: 10%;
+    height: 200px;
+}
+
+#inicio:hover {
+    background-image: url(../imagens/home.png);
+    background-repeat: no-repeat;
+    background-size: auto 230px;
+    background-position: center;
+}
+
+#inicio:hover a {
+    color: transparent;
+}
+
+#cardapio:hover {
+    background-image: url(../imagens/cardapio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#cardapio:hover a {
+    color: transparent;
+}
+
+#historia:hover {
+    background-image: url(../imagens/historia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#historia:hover a {
+    color: transparent;
+}
+
+
+#menu {
+    background-color: rgb(202, 46, 46);
+    height: 90px;
+}
+
+/*Fim do Menu*/
+
+
+body:not(.menu) {
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+
+h1{
+    margin: 0px 0px 50px -80px;
+    background-image: url(../imagens/fundo-h1-unidades.avif);
+    width: 2000px;
+    overflow: hidden;
+    height: 80px;
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    font-family: cursive;
+}
+
+h2{
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-family: cursive;
+}
+
+/*Mapa*/
+.mapa {
+    width: 800px;
+    height: 700px;
+    border: 5px solid black;
+    border-radius: 10%;
+    background-image: url(../imagens/mapa-unidades.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+/*CSS universal dos botões*/
+.botao-sp, .botao-rj, .botao-bh, .botao-vt, .botao-sv, .botao-cu{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(72, 116, 197);
+    border: 4px solid black;
+    position: absolute;
+}
+
+/*CSS universal dos nomes*/
+.nome-sp, .nome-rj, .nome-bh, .nome-vt, .nome-sv, .nome-cu{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 1, 0.884);
+    padding: 3px;
+    display: none;
+}
+
+/*Botões*/
+.botao-sp{
+    bottom: 24.5%;
+    right: 32%;
+    transition: all 0.3s ease;
+}
+
+.botao-rj{
+    bottom: 26%;
+    right: 25%;
+    transition: all 0.3s ease;
+}
+
+.botao-bh{
+    bottom: 34%;
+    right: 27%;
+    transition: all 0.3s ease;
+}
+
+.botao-vt{
+    bottom: 33%;
+    right: 18.5%;
+    transition: all 0.3s ease;
+}
+
+.botao-sv{
+    bottom: 52%;
+    right: 14%;
+    transition: all 0.3s ease;
+}
+
+.botao-cu{
+    bottom: 20%;
+    right: 39%;
+    transition: all 0.3s ease;
+}
+
+/*Hover nos botões*/
+.botao-sp:hover{
+    background-color: greenyellow;
+    border: 5px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao-rj:hover{
+    background-color: greenyellow;
+    border: 5px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao-bh:hover{
+    background-color: greenyellow;
+    border: 5px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao-vt:hover{
+    background-color: greenyellow;
+    border: 5px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao-sv:hover{
+    background-color: greenyellow;
+    border: 5px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.botao-cu:hover{
+    background-color: greenyellow;
+    border: 5px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+/*Nomes das cidades*/
+.nome-sp{
+    bottom: 29.5%;
+    right: 29%;
+}
+
+.nome-rj{
+    bottom: 31%;
+    right: 20%;
+}
+
+.nome-bh{
+    bottom: 39%;
+    right: 22%;
+}
+
+.nome-vt{
+    bottom: 38%;
+    right: 17.5%;
+}
+
+.nome-sv{
+    bottom: 57%;
+    right: 12%;
+}
+
+.nome-cu{
+    bottom: 25%;
+    right: 37%;
+}
+
+/*Nomes quando hover nos botões*/
+.botao-sp:hover + .nome-sp{
+    display: inline;
+}
+.botao-rj:hover + .nome-rj{
+    display: inline;
+}
+.botao-bh:hover + .nome-bh{
+    display: inline;
+}
+.botao-vt:hover + .nome-vt{
+    display: inline;
+}
+.botao-sv:hover + .nome-sv{
+    display: inline;
+}
+.botao-cu:hover + .nome-cu{
+    display: inline;
+}
