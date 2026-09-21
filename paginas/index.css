@@ -182,3 +182,39 @@ h3 {
 .final h2 {
     font-size: 50px;
 }
+
+/*responsividades*/
+@media (max-width: 1325px) {
+    #topicos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tp1, .tp2, .tp3{
+        border-left: 3px solid rgb(212, 160, 89);
+        border-bottom: 3px solid rgb(212, 160, 89);
+        border-right: none;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .menu{
+        position: absolute;
+        top: 0%;
+    }
+    .tp1, .tp2, .tp3{
+        width: 40%;
+    }
+    .tp3{
+        margin-bottom: 100px;
+    }
+    .whats{
+        position: static;
+        background-color: #f8e7c9;
+        border: 5px solid #11b98d;
+        border-radius: 8%;
+        margin-bottom: 100px;
+        margin-left: 37%;
+    }
+    
+}

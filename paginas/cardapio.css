@@ -164,3 +164,32 @@ p{
     color: white;
     font-size: 50px;
 }
+
+/*responsividade:
+*/
+@media (max-width: 1325px){
+    .whats{
+        position: static;
+        background-color: #f8e7c9;
+        border: 5px solid #11b98d;
+        border-radius: 8%;
+        margin-left: 37%;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 700px){
+    .topo{
+        position: static;
+    }
+    .menu{
+        position: absolute;
+        top: 100px;
+    }
+    .pai{
+        margin-left: 50px;
+    }
+    .tradicionais{
+        margin-top: 200px;
+    }
+}

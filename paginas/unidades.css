@@ -8,6 +8,7 @@
     left: 0;
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 .botao-menu {
@@ -90,13 +91,12 @@ body:not(.menu) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 60px;
+    margin-left: 0;
 }
 
 h1{
-    margin: 0px 0px 50px -80px;
     background-image: url(../imagens/fundo-h1-unidades.avif);
-    width: 2000px;
+    width: 100%;
     overflow: hidden;
     height: 80px;
     color: white;
@@ -106,15 +106,15 @@ h1{
 }
 
 h2{
-    margin-bottom: 40px;
+    margin: 20px 0px 40px 60px;
     font-size: 32px;
     font-family: cursive;
 }
 
 /*Mapa*/
 .mapa {
-    width: 800px;
-    height: 700px;
+    width: 750px;
+    height: 650px;
     border: 5px solid black;
     border-radius: 10%;
     background-image: url(../imagens/mapa-unidades.png);
@@ -122,6 +122,8 @@ h2{
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    z-index: 1;
+    margin-left: 60px;
 }
 
 /*CSS universal dos botões*/
@@ -275,3 +277,29 @@ h2{
 .botao-cu:hover + .nome-cu{
     display: inline;
 }
+
+
+/*responsividade:
+*/
+@media (max-width: 1130px){
+    h2{
+        margin-bottom: 200px;
+    }
+    .menu{
+        top: 200px;
+        flex-direction: row;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+    }
+    .botao-menu, #menu{
+        height: 80px;
+        border-right: 2px solid black;
+
+    }
+    .mapa{
+        height: 500px;
+        width: 600px;
+    }
+}
+
